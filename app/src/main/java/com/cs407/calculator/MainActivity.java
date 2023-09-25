@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         EditText number2 = (EditText) findViewById(R.id.editTextNumber2);
 
         try {
+            int test = Integer.parseInt(number1.getText().toString()) / Integer.parseInt(number2.getText().toString());
             float result = (float) Integer.parseInt(number1.getText().toString()) / Integer.parseInt(number2.getText().toString());
             goToActivity(String.valueOf(result));
         } catch (ArithmeticException aE) {
